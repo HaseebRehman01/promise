@@ -162,3 +162,42 @@
 
 
 
+
+// let color = (color, time) => {
+//     let p = document.querySelector("#p")
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             p.style.color = color
+//             resolve("promise resolve")
+//                 reject("promise rejected")
+//         }, time)
+    
+//     })
+// }
+// color("yellow", 1000).
+//     then((result) => {
+//         console.log(result)
+//         return color("red", 1000)
+//     })
+//     .then((result) => {
+//         console.log(result)
+//         return color("purple", 10000)
+//     })
+//     .then((result) => {
+//         console.log(result)
+//         return color("cyan", 1000)
+//     })
+//     .then((result) => {
+//         console.log(result)
+//         return color("pink", 1000)
+//     })
+
+//     .then((result) => {
+
+//         console.log(result)
+//         return color("brown", 1000)
+//     })
+
+//     .catch((e) => {
+//         console.log("promise catch : error ",e)
+//     })
