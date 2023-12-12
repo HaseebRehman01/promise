@@ -161,7 +161,7 @@
 
 
 
-
+//task
 
 // let color = (color, time) => {
 //     let p = document.querySelector("#p")
@@ -171,7 +171,7 @@
 //             resolve("promise resolve")
 //                 reject("promise rejected")
 //         }, time)
-    
+
 //     })
 // }
 // color("yellow", 1000).
@@ -201,3 +201,140 @@
 //     .catch((e) => {
 //         console.log("promise catch : error ",e)
 //     })
+
+
+
+
+//asyn/await
+//await jabhi chalega jab function async hoga
+// function names(){
+// return new Promise((resolve,reject)=>{
+//  setTimeout(()=>{
+// console.log("haseeb")
+// resolve()
+//  },2000)
+
+// })
+// }
+
+
+// async function name2(){
+//     await names()
+// await    names()
+//     names()
+
+// }
+// name2()
+
+
+//task (promise work using async/await keywords)
+
+// let color = (color, time) => {
+//     let p = document.querySelector("#p")
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             p.style.color = color
+//             resolve("promise resolve")
+//                 reject("promise rejected")
+//         }, time)
+
+//     })
+// }
+// color("yellow", 1000).
+//     then((result) => {
+//         console.log(result)
+//         return color("red", 1000)
+//     })
+//     .then((result) => {
+//         console.log(result)
+//         return color("purple", 10000)
+//     })
+//     .then((result) => {
+//         console.log(result)
+//         return color("cyan", 1000)
+//     })
+//     .then((result) => {
+//         console.log(result)
+//         return color("pink", 1000)
+//     })
+
+//     .then((result) => {
+
+//         console.log(result)
+//         return color("brown", 1000)
+//     })
+
+//     .catch((e) => {
+//         console.log("promise catch : error ",e)
+//     })
+
+// our task is to shoert above code using async/await
+// task 
+// let color = (color, time) => {
+//     let p = document.querySelector("#p")
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             p.style.color = color
+//             resolve("promise resolve")
+//             reject("promise rejected")
+//         }, time)
+
+//     })
+// }
+// async function colorDisplay() {
+//     await color("red", 1000)
+//     await color("yellow", 1000)
+//     await color("pink", 1000)
+//     await color("purple", 1000)
+//     await color("cyan", 1000)
+// }
+// colorDisplay()
+
+//await handling errors using try & catch 
+// let color = (color, time) => {
+//     let p = document.querySelector("#p")
+//     return new Promise((resolve, reject) => {
+//         let num = Math.floor(Math.random() * 10) + 1
+//         if (num > 4) {
+//             setTimeout(() => {
+//                 p.style.color = color
+//                 console.log(`${color} was added`)
+//                 resolve("promise resolve")
+//             }, time)
+//         }
+
+//         else {
+//             reject()
+//         }
+//     })
+// }
+// async function colorDisplay() {
+//     //agar esa karta toh agar 5 color mai sa kesi ik mai bhi error ajata toh last wla console
+//     //haseeb , ali bhi nhia chalta esi lya esa handle karna ka lya try catch use kya 
+//     // await color("red", 1000)
+//     // await color("yellow", 1000)
+//     // await color("pink", 1000)
+//     // await color("purple", 1000)
+//     // await color("cyan", 1000)
+//     // console.log("haseeb")
+//     // console.log("ali")
+
+
+//     try {  // await handling errors using try & catch  abb error nahi ayega
+//         await color("red", 1000)
+//         await color("yellow", 1000)
+//         await color("pink", 1000)
+//         await color("purple", 1000)
+//         await color("cyan", 1000)
+//     } catch {
+//         console.log("catch  mai error agaya ")
+//     }
+//     console.log("haseeb")
+//     console.log("ali")
+
+// }
+// colorDisplay()
+
+
+
+//complete
